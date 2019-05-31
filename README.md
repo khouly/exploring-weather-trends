@@ -103,19 +103,44 @@ Exported the temperature data to CSV files.
 
 ![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o1.png "Missing data")
 
-## 2. 
-![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o2.png "")
+## 2. Difference in temperature
+* There is a huge difference between average temperature in Cairo and the global average
+* The average of this difference is 12.77 °C for the years 1808 to 2013
 
-## 3. 
-![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o3.png "")
+![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o2.png "Difference in temperature")
 
-## 4. 
-![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o4.png "")
+## 3. Rate of increase
+* The chart shows that the weather in Cairo and globally has been increasing over time
+* There is also increase in the steepness of the slope in the most recent years which indicates that the rate of higher temperature is increasing 
 
-## 5. 
-![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o5.png "")
+![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o3.png "Rate of increase")
 
-## 6. 
+## 4. Correlation
+* There is a positive correlation between the global weather averages and the weather averages in Cairo as they follow a similar slope
+* This correlation is more and more clear when you check the charts with higher window sizes
 
-## 7. 
-![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o7.png "")
+![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o4.png "Correlation")
+
+## 5. Data error
+* In year 1818 there is step dive in the temperature in Cairo for 1 year going down from 21.88 to 11.60 and then back up to 20.31
+* In my opinion this might be a data error as it is the only outlier and the weather never reached this low again
+* Also the global weather was much more stable around these years
+
+![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o5.png "Data error")
+
+## 6. Correlation coefficients
+* There is a positive correlation between the average temperature globally and the selected cities
+* Cairo has the highest correlation between the 3 cities to the global average
+* As you increase the window size they get more and more correlated which indicates that they are following the same trend but with some fluctuations
+* These values were calculated with the CORREL function in Excel
+
+| Window size   | 1 | 2 | 4 | 6 | 8 | 10 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Global - Cairo | 0.583 | 0.753 | 0.869 | 0.904 | 0.921 | 0.933 |
+| Global - Amsterdam | 0.517 | 0.611 | 0.708 | 0.780 | 0.823 | 0.848 |
+| Global - Berlin | 0.516 | 0.597 | 0.699 | 0.777 | 0.827 | 0.858 |
+
+## 7. Correlation vs difference
+* Even though Cairo has the highest correlation with the global average weather both Amsterdam and Berlin have much less variance in the average temperature
+
+![alt text](https://github.com/khouly/exploring-weather-trends/blob/master/o7.png "Correlation vs difference")
